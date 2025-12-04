@@ -1,0 +1,85 @@
+body { 
+    font-family: 'Arial', sans-serif; 
+    background: linear-gradient(to right, #ffc9cc, #ffcccc); 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh;
+} 
+
+.container { 
+    text-align: center; 
+    background: rgba(255, 255, 255, 0.9); 
+    padding: 30px; 
+    border-radius: 15px; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+    animation: heartbeat 2s infinite; 
+    max-width: 350px; 
+} 
+
+.heart-container { 
+    position: relative;
+    width: 100px;
+    height: 100px; 
+    margin: 20px auto; 
+} 
+
+.heart { 
+    position: absolute; 
+    width: 50px; 
+    height: 50px; 
+    background-color: #ff6347; 
+    transform: rotate(-45deg); 
+    top: 25px; 
+    left: 25px; 
+} 
+
+.heart:before, 
+.heart:after { 
+    content: ""; 
+    position: absolute; 
+    width: 50px; 
+    height: 50px;
+    background-color: #ff6347; 
+    border-radius: 50%; 
+} 
+
+.heart:before { 
+    top: -25px; 
+    left: 0; 
+} 
+
+.heart:after { 
+    top: 0; 
+    left: 25px; 
+} 
+
+.birthday-text { 
+    font-size: 30px; 
+    color: #d81b60; 
+    margin-top: 20px; 
+    font-weight: bold;
+} 
+
+.gift-message { 
+    font-size: 18px; 
+    color: #4a4a4a; 
+    line-height: 1.6;
+    margin-top: 15px; 
+    padding-bottom: 10px;
+} 
+
+.couple-sticker {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+@keyframes heartbeat { 
+    0% { transform: scale(1); } 
+    50% { transform: scale(1.08); } 
+    100% { transform: scale(1); } 
+}
